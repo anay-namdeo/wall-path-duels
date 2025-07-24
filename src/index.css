@@ -2,41 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Quoridor Game Design System - Premium Dark Board Game Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base Colors - Dark Premium Theme */
+    --background: 20 14% 8%;
+    --foreground: 30 15% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Game Board Colors */
+    --board-bg: 25 25% 12%;
+    --board-line: 30 8% 25%;
+    --board-cell: 25 20% 15%;
+    --board-cell-hover: 25 25% 18%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Player Colors */
+    --player-1: 200 80% 60%;
+    --player-1-glow: 200 80% 70%;
+    --player-2: 35 85% 65%;
+    --player-2-glow: 35 85% 75%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Wall Colors */
+    --wall-color: 30 15% 85%;
+    --wall-hover: 30 20% 90%;
+    --wall-preview: 30 15% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* UI Colors */
+    --card: 25 20% 10%;
+    --card-foreground: 30 15% 92%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 25 20% 10%;
+    --popover-foreground: 30 15% 92%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --primary: 200 80% 60%;
+    --primary-foreground: 30 15% 92%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --secondary: 25 25% 18%;
+    --secondary-foreground: 30 15% 92%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --muted: 25 15% 20%;
+    --muted-foreground: 30 8% 65%;
 
-    --radius: 0.5rem;
+    --accent: 35 85% 65%;
+    --accent-foreground: 25 20% 10%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 30 15% 92%;
+
+    --border: 25 15% 20%;
+    --input: 25 20% 15%;
+    --ring: 200 80% 60%;
+
+    /* Gradients */
+    --gradient-board: linear-gradient(135deg, hsl(var(--board-bg)), hsl(25 20% 14%));
+    --gradient-player-1: radial-gradient(circle, hsl(var(--player-1-glow)), hsl(var(--player-1)));
+    --gradient-player-2: radial-gradient(circle, hsl(var(--player-2-glow)), hsl(var(--player-2)));
+
+    /* Shadows */
+    --shadow-game: 0 20px 40px -10px hsl(20 14% 4% / 0.8);
+    --shadow-player: 0 8px 16px -4px hsl(var(--player-1) / 0.4);
+    --shadow-wall: 0 4px 8px -2px hsl(30 15% 0% / 0.6);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

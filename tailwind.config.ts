@@ -24,6 +24,20 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				/* Game-specific colors */
+				'board-bg': 'hsl(var(--board-bg))',
+				'board-line': 'hsl(var(--board-line))',
+				'board-cell': 'hsl(var(--board-cell))',
+				'board-cell-hover': 'hsl(var(--board-cell-hover))',
+				'player-1': 'hsl(var(--player-1))',
+				'player-1-glow': 'hsl(var(--player-1-glow))',
+				'player-2': 'hsl(var(--player-2))',
+				'player-2-glow': 'hsl(var(--player-2-glow))',
+				'wall-color': 'hsl(var(--wall-color))',
+				'wall-hover': 'hsl(var(--wall-hover))',
+				'wall-preview': 'hsl(var(--wall-preview))',
+				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
